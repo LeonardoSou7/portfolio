@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-i {
-    color: white;
-    font-size: 40px;
-}
 
 body {
     background-color: black;
@@ -59,6 +55,11 @@ header {
     justify-content: space-between;
 }
 
+.menu-desktop span {
+    color: darkorange;
+}
+
+
 header h1 {
     color: white;
     display: inline-block;
@@ -93,7 +94,7 @@ header nav ul li {
 
 
 .btn-contato button:hover {
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 8px white;
     background-color: blue;
     color: white;
     transform: scale(1.05);
@@ -155,7 +156,7 @@ section.topo-do-site .flex {
 
 /* HABILIDADES-BOX */
 section.habilidades {
-    padding: 40px 4%;
+    padding: 45px 4%;
 }
 
 section.habilidades .flex {
@@ -185,4 +186,56 @@ section.habilidades .flex {
 .habilidades .habilidades-box h3 {
     font-size: 28px;
     margin: 16px 0px;
+}
+
+
+/* SOBRE */
+#taça {
+    border-radius: 30px;
+}
+
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: darkorange;
+    display: block;
+}
+
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+.sobre .txt-sobre .social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+.sobre .txt-sobre .social button:hover {
+    box-shadow: 0 0 10px white;
+    transform: scale(1.06);
+    background-color: black;
+    color: white;
 }
