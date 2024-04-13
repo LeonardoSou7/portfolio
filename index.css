@@ -28,7 +28,7 @@ body {
     font-weight: 600;
     background-color: white;
     border: 0;
-    border-radius: 30px;
+    border-radius: 25px;
     cursor: pointer;
     transition: .2s;
 }
@@ -91,8 +91,6 @@ header nav ul li {
 
 
 
-
-
 .btn-contato button:hover {
     box-shadow: 0px 0px 8px white;
     background-color: blue;
@@ -102,7 +100,7 @@ header nav ul li {
 
 /* TOPO DO SITE */
 section.topo-do-site {
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 section.topo-do-site .flex {
@@ -140,7 +138,6 @@ section.topo-do-site .flex {
     position: relative;
     animation: levitado 2s ease-in-out infinite alternate;
 }
-
 
 
 @keyframes levitado {
@@ -222,7 +219,7 @@ section.sobre .flex {
 }
 
 
-.sobre .txt-sobre .social button {
+.social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -233,9 +230,111 @@ section.sobre .flex {
     transition: .2s;
 }
 
-.sobre .txt-sobre .social button:hover {
+.social button:hover {
     box-shadow: 0 0 10px white;
     transform: scale(1.06);
     background-color: black;
     color: white;
+}
+
+
+/* FORMULARIO */
+section.formulario {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.151);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+form textarea {
+    resize: none;
+    max-height: 250px;
+}
+
+
+form .enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+form .enviar input {
+    width: 120px;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+}
+
+
+form .enviar input:hover {
+    transform: scale(1.06);
+    color: darkorange;
+    box-shadow: 0 0 3px darkorange;
+}
+
+
+
+/* RODAPÉ */
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line {
+    padding: 20px 0;
+}
+
+
+footer .nome-rodape h1 span {
+    color: darkorange;
+}
+
+.borda {
+    border-top: 2px solid darkorange;
+}
+
+footer .line p {
+    color: white;
+    font-size: 22px;
+    transition: .2s;
+}
+
+footer .line p:hover {
+    i {
+        color: darkorange;
+    }
+
+    transform: scale(1.03);
+}
+
+footer .line p i {
+    color: white;
+    font-size: 26px;
+    transition: .2s;
 }
