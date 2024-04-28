@@ -50,7 +50,14 @@ h2.titulo span {
 
 /* CABEÇARIO */
 header {
-    padding: 40px 4%;
+    padding: 15px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(8, 12, 32, 0.36);
+    backdrop-filter: blur(5px);
+    z-index: 5;
 }
 
 #teste {
@@ -104,7 +111,7 @@ header nav ul li {
 
 /* TOPO DO SITE */
 section.topo-do-site {
-    padding: 80px 4%;
+    padding: 140px 4%;
 }
 
 section.topo-do-site .flex {
@@ -1593,4 +1600,19 @@ html {
     border-radius: 50%;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.05), 0 0 0 15px rgba(255, 255, 255, 0.05), 0 0 0 25px rgba(255, 255, 255, 0.05), 0 0 0 35px rgba(255, 255, 255, 0.05);
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* barra de rolagem do site */
+
+html ::-webkit-scrollbar {
+    width: 16px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: navy;
+}
+
+html ::-webkit-scrollbar-track {
+    background-color: rgb(2, 2, 12);
 }
