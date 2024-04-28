@@ -599,7 +599,7 @@ html {
     top: 0;
 }
 
-/* bolinhas saltitante */
+/* bolinhas saltitantes */
 
 .wrapper {
     width: 200px;
@@ -688,6 +688,10 @@ html {
     left: auto;
     right: 15%;
     animation-delay: .3s;
+}
+
+#bolinha {
+    display: flex;
 }
 
 
