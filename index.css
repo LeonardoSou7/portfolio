@@ -398,7 +398,7 @@ html {
 .button::before {
     position: absolute;
     bottom: -20px;
-    content: "Back to Top";
+    content: "Voltar ao Início";
     color: white;
     font-size: 0px;
 }
